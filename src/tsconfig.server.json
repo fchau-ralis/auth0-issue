@@ -1,0 +1,15 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "../out-tsc/app",
+        "baseUrl": "./",
+        "target": "es2016",
+        "types": []
+    },
+    "exclude": ["test.ts", "**/*.spec.ts"],
+    "files": ["main.server.ts"],
+    "angularCompilerOptions": {
+        "entryModule": "app/app.server.module#AppServerModule",
+        "enableIvy": false
+    }
+}

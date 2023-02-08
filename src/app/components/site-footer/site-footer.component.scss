@@ -1,0 +1,144 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+:host {
+    box-shadow: 1px -3px 6px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
+}
+footer {
+    background-color: #1c1c1c;
+    .copyright {
+        background-color: #141414;
+    }
+    .footer-links,
+    .copyright {
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+    }
+}
+
+.logo {
+    display: block;
+    max-height: 85px;
+    height: 85px;
+    img {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+.mission-statement {
+    line-height: 16px;
+    @include media-breakpoint-up(md) {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+a.text-white {
+    &:hover {
+        text-decoration: initial;
+        i {
+            transition: all ease 200ms;
+        }
+        &.facebook i {
+            color: #3b5998;
+            transition: all ease 200ms;
+        }
+        &.twitter i {
+            color: #1da1f2;
+            transition: all ease 200ms;
+        }
+        &.linkedin i {
+            color: #0077b5;
+            transition: all ease 200ms;
+        }
+    }
+}
+.social-links ul li {
+    &:last-of-type a {
+        margin-right: 0 !important;
+    }
+}
+
+.mission-statement,
+.title,
+a:not(.text-white) {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.text-grey,
+a:not([href]) {
+    color: #6a6a6a;
+    margin-bottom: 4px;
+    padding-right: 8px;
+
+    &:hover {
+        color: #6a6a6a;
+    }
+}
+
+.business-address:last-child {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.title {
+    color: #939393;
+    margin-bottom: 10px;
+}
+
+a:not(.text-white)[href] {
+    transition: all ease 200ms;
+
+    &:hover {
+        text-decoration: initial;
+        transition: all ease 200ms;
+        color: #5985e4;
+    }
+}
+
+.border-xl-left {
+    @include media-breakpoint-up(xl) {
+        border-left: 1px solid #343a40 !important;
+    }
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100% !important;
+    background-color: #fff;
+    border-top: 1px solid #c6c9cf;
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    padding-bottom: constant(safe-area-inset-bottom); /* iOS 11.0 */
+    padding-bottom: env(safe-area-inset-bottom); /* iOS 11.2 */
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+    svg-icon {
+        height: 16px;
+        margin-bottom: 4px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .icon {
+        color: #4a4a4a;
+    }
+    .icon-text {
+        font-family: 'SF Pro Display', sans-serif;
+        font-size: 11px;
+        margin: 0;
+        color: #4a4a4a;
+    }
+}

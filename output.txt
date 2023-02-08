@@ -1,0 +1,70 @@
+successful creation of the sync_customers function
+successful creation of the sync_offers function
+successful creation of the update_offer_customer_id function
+Successfully deployed the trigger for salesforce.contact
+Successfully deployed the trigger for salesforce.offer
+Successfully deployed the trigger for public.customer
+Web app listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+LEAD {
+  Zip: '92868',
+  WorkPhone: '',
+  testLead: false,
+  SubID3: '',
+  SubID2: '',
+  SubID: '',
+  Street: '3063 W Chapman Ave',
+  State: 'CA',
+  SSN: '123454565',
+  ShortURL_application: '',
+  SalesforceLeadID: null,
+  RequestedLoanAmount: null,
+  ReferralURL: null,
+  PrimaryZip: null,
+  PrimaryStreet: null,
+  PrimaryState: null,
+  PrimaryCity: null,
+  PreferredContactMethod: null,
+  OtherIncome: null,
+  OfferId: null,
+  OccupancyType: null,
+  MiddleName: null,
+  Longitude: null,
+  LoanPurpose: null,
+  LeadSource: null,
+  LeadProviderID: null,
+  Latitude: null,
+  LastName: 'Gadda',
+  IsSelfEmployed: false,
+  IsReadyForCreditPull: false,
+  IsMilitary: false,
+  IsHomeOwner: false,
+  IP: null,
+  incomeSource: null,
+  HomePhone: null,
+  GoogleID: null,
+  FirstName: 'Manohith',
+  FinancingPurpose: null,
+  FianncingUse: null,
+  Email: 'manohith123@gmail.com',
+  DOB: '01/27/1992',
+  disclosures: null,
+  DisclosurePosts: [
+    { IsAgreed: true, SFFieldName: 'Financial_Income_Disclosure__c' },
+    { IsAgreed: true, SFFieldName: 'Agreed_to_Disclosures__c' },
+    { IsAgreed: true, SFFieldName: 'Agreed_to_SoftPull__c' },
+    { IsAgreed: true, SFFieldName: 'EFT_disclosure__c' },
+    { IsAgreed: true, SFFieldName: 'Financial_Income_Disclosure__c' }
+  ],
+  City: 'Orange',
+  CellPhone: '2015150270',
+  CampaignID: '1',
+  ApplicationStep: null,
+  AnnualIncome: null,
+  Action: 'Insert',
+  propertyLocated: null,
+  propertyType: null,
+  propertyValue: null,
+  mortgageBalance: null,
+  creditScore: null
+}

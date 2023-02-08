@@ -1,0 +1,81 @@
+button {
+	margin: 30px auto 15px auto;
+}
+
+button.center {
+	display: block;
+	margin: 25px auto;
+}
+
+.icon-medium {
+	width: 85px;
+	height: 85px;
+	margin: 0px 20px 20px 0px;
+}
+
+.icon-small {
+	width: 25px;
+	height: 25px;
+}
+
+.logo-centered {
+	display: block;
+	width: 64px;
+	margin: 24px auto;
+}
+
+.error {
+	color: #da1b32;
+	background-color: #fbb8b8;
+	font-size: 12px;
+	border: 2px solid #d91b31;
+	padding: 0 10px;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+
+.field-error {
+	border: 1px solid #da1b32;
+	color: #da1b32;
+}
+
+.bold-text {
+	opacity: 0.5;
+	font-size: 16px;
+}
+
+.light-text {
+	opacity: 0.3;
+	font-size: 10px;
+}
+
+.link {
+	font-size: 12px;
+	color: #017aff;
+}
+
+.link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.title-description {
+	min-width: 80%;
+	max-width: 20vw;
+	margin: 35px auto 0px auto;
+}
+
+// app-site-footer {
+// 	display: block;
+// 	// margin-top: 5rem;
+// 	box-shadow: 1px -3px 6px 0 rgba(0, 0, 0, 0.08);
+// }
+
+:host ::ng-deep router-outlet + * {
+	display: block;
+	// min-height: 100vh;
+	@media (min-width: 768px) {
+		//min-height: calc(100vh - 136px);
+		// height: calc(100vh - 136px);
+	}
+}

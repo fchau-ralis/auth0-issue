@@ -1,0 +1,6 @@
+{
+	"herokudb": {
+		"name": "herokudb",
+		"connector": "postgresql"
+	}
+}

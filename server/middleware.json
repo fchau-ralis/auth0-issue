@@ -1,0 +1,53 @@
+{
+    "initial:before": {
+        "loopback#favicon": {}
+    },
+    "initial": {
+        "compression": {},
+        "cors": {
+            "params": {
+                "origin": true,
+                "credentials": true,
+                "maxAge": 86400
+            }
+        }
+    },
+    "session": {},
+    "auth": {},
+    "parse": {
+        "body-parser#json": {
+            "params": {
+                "limit": "50mb"
+            }
+        },
+        "body-parser#urlencoded": {
+            "params": {
+                "limit": "50mb",
+                "extended": true
+            }
+        },
+        "express-xml-bodyparser": {
+            "params": {
+                "explicitArray": false,
+                "explicitRoot": false,
+                "strict": false
+            }
+        }
+    },
+    "routes": {
+        "loopback#rest": {
+            "paths": ["${restApiRoot}"]
+        }
+    },
+    "files": {
+        "loopback#static": {
+            "params": "$!../client/dist"
+        }
+    },
+    "final": {
+        "loopback#urlNotFound": {}
+    },
+    "final:after": {
+        "strong-error-handler": {}
+    }
+}

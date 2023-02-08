@@ -1,0 +1,27 @@
+{
+    "extends": ["prettier", "google"],
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "rules": {
+        "prettier/prettier": ["error"],
+        "linebreak-style": 0,
+        "indent": ["error", 4],
+        "switch-colon-spacing": 0,
+        "comma-dangle": 0,
+        "no-tabs": 0,
+        "require-jsdoc": [
+            "error",
+            {
+                "require": {
+                    "FunctionDeclaration": true,
+                    "MethodDefinition": false,
+                    "ClassDeclaration": false,
+                    "ArrowFunctionExpression": false,
+                    "FunctionExpression": false
+                }
+            }
+        ]
+    }
+}
